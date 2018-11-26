@@ -1,0 +1,29 @@
+{
+  "name": "admin-proyectos",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.10.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "upload": "./upload-macos ./ frontend --exclude='^upload-|^build|^node_modules|^.git'",
+    "deployx": "npm run build && ./upload-macos build server/public --host=192.168.15.2",
+    "deploy": "npm run build && ./upload-macos build server/public",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
